@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ticket Master</title>
+		<link rel='stylesheet' type='text/css' href='TicketMaster.css'/>
+		<link rel='stylesheet' type='text/css' href='normalize.css'/>
+		<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<section id = "header">
+			<div id = "title">
+				<h2>Aon Ticket Master</h2>
+			</div>
+			<div id = "break-timer">
+			</div>
+			<section id = "contents">
+				<textarea id="text-area" spellcheck = "false" rows="30" cols="65">
+Additional User Information
+•	Are they remote/alternate location (Y/N) 
+o	Phone Number: 
+o	Physical Location: 
+
+Machine/Equipment related:
+•	Windows XP, Windows 7, other:
+•	Desktop or Laptop:
+
+Legacy Org:
+L-Aon / L-Hewitt
+
+ISSUE DESCRIPTION: 
+•	Application/System: 
+•	User ID used to access system:
+•	When did this issue start? Today
+•	When (or has) this action been successful in the past? Yes
+•	Have there been any recent changes to the PC and/or Software? No
+•	How many users are affected? 1
+•	Is there any Client impact ? No
+o	If yes, list Client(s) impacted:
+o	Is the caller part of a call center?
+
+Full error message/Situation details:
+
+ISSUE TROUBLESHOOTING:
+•	Does it work on another PC? N/A
+•	The following actions were performed with the end-user:
+•	</textarea>
+			<div id ="button-area">
+				<div id="password-dropdown" class="dropdown">
+    				<ul class="dropdown-head">
+    					<li><a href="#1">Passwords</a></li>
+    					<ul class="dropdown-items">
+					        <li><a href="#2">Workstation</a></li>
+					        <li><a href="#3">BitLocker</a></li>
+					        <li><a href="#4">AS400</a></li>
+					        <li><a href="#6">Imaging</a></li>
+					        <li><a href="#7">GoodApp</a></li>
+				        </ul>
+				    </ul>
+				</div>
+				<div id="RSA-dropdown" class="dropdown">
+    				<ul class="dropdown-head">
+    					<li><a href="#1">RSA</a></li>
+    					<ul class="dropdown-items">
+					        <li><a href="#2">Emergency</a></li>
+					        <li><a href="#3">Reimport</a></li>
+					        <li><a href="#4">Technician</a></li>
+				        </ul>
+				    </ul>
+				</div>
+			</div>
+		</div>
+		</section>
+		<script type="text/javascript" src="TicketMaster.js"></script>
+	</body>
+</html>
