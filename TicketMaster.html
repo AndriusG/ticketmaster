@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Ticket Master</title>
+        <meta charset="UTF-8">
 		<link rel='stylesheet' type='text/css' href='TicketMaster.css'/>
 		<link rel='stylesheet' type='text/css' href='normalize.css'/>
 		<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
@@ -14,6 +15,9 @@
 				<h2>Aon Ticket Master</h2>
 			</div>
 			<div id = "break-timer">
+				<div id = "time">
+					<span>Time until next break: </span>
+				</div>
 			</div>
 		</div>
 		<div id = "contents">
@@ -24,11 +28,12 @@
 					<ul class="dropdown-head">
 						<li><a href="#1">Passwords</a></li>
 						<ul class="dropdown-items">
-					        <li><a href="#2">Workstation</a></li>
+					        <li id="WorkstationReset"><a href="#2">Workstation</a></li>
 					        <li><a href="#3">BitLocker</a></li>
 					        <li><a href="#4">AS400</a></li>
 					        <li><a href="#6">Imaging</a></li>
 					        <li><a href="#7">GoodApp</a></li>
+					        <li><a href="#7">Certificate</a></li>
 				        </ul>
 				    </ul>
 				</div>
@@ -37,7 +42,7 @@
 						<li><a href="#1">RSA</a></li>
 						<ul class="dropdown-items">
 					        <li><a href="#2">Emergency</a></li>
-					        <li><a href="#3">Reimport</a></li>
+					        <li><a href="#3">Reseed</a></li>
 					        <li><a href="#4">Technician</a></li>
 				        </ul>
 				    </ul>
@@ -47,7 +52,7 @@
 						<li><a href="#1">AppStore</a></li>
 						<ul class="dropdown-items">
 					        <li><a href="#2">Installation failure</a></li>
-					        <li><a href="#3">Redirect</a></li>
+					        <li><a href="#3">Installation assistance</a></li>
 				        </ul>
 				    </ul>
 				</div>
