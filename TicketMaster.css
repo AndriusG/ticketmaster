@@ -32,7 +32,7 @@ HEADER
 
 #title h2 {
 	padding: 0;
-	margin: 20px 25px 25px 0px;
+	margin: 20px 77px 25px 0px;
 	font-size: 3em;
 	font-family: 'Bree Serif', serif;
 	color: #D0A825;
@@ -121,10 +121,13 @@ textarea {
 	display: block;
 	background-color: #E8E595;
 	text-align: center;
+	z-index: 0;
 }
 
 #applications-title {
 	margin-top: 10px;
+	position: relative;
+	z-index: 0;
 }
 
 /**********************************
@@ -134,11 +137,18 @@ Div properties
 .dropdown {
 	display: inline-block;
 	vertical-align: top;
+	position: relative;
+	z-index: 2;
 }
 
 /**********************************
 List styles
 **********************************/
+
+.dropdown-wrapper {
+	width: 100%;
+	height: 40px;
+}
 
 ul
 {
@@ -173,6 +183,8 @@ ul li a {
 .dropdown-items {
 	background-color: #E8E595;
 	display: none;
+	position: relative;
+	z-index: 2;
 }
 
 .dropdown-items a:hover {

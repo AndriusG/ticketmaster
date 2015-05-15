@@ -24,14 +24,34 @@
 			<textarea id="text-area" spellcheck = "false" rows="32"></textarea>
 			<div id ="button-area">
 				<div class = "rightmenu-title"><div>Quick Buttons</div></div>
-				<div id="text-dropdown" class="dropdown">
-					<ul class="dropdown-head">
-						<li id="text-actions-title"><a href="#1">Text actions</a></li>
-						<ul class="dropdown-items">
-					        <li id=""><a href="#2">Clear</a></li>
-					        <li id=""><a href="#3">Select All</a></li>
-				        </ul>
-				    </ul>
+				<div class = "dropdown-wrapper">
+					<div id="text-dropdown" class="dropdown">
+						<ul class="dropdown-head">
+							<li id="text-actions-title"><a href="#1">Text actions</a></li>
+							<ul class="dropdown-items">
+						        <li id="SelectAllBtn"><a href="#2">Select All</a></li>
+						        <li id="ClearBtn"><a href="#3">Clear</a></li>
+					        </ul>
+					    </ul>
+					</div>
+					<div id="quicktext-dropdown" class="dropdown">
+						<ul class="dropdown-head">
+							<li id="screenshare-title"><a href="#1">Screenshare</a></li>
+							<ul class="dropdown-items">
+						        <li id="ScreenLync"><a href="#2">Lync</a></li>
+						        <li id="ScreenBomgar"><a href="#3">Bomgar</a></li>
+					        </ul>
+					    </ul>
+					</div>
+					<div id="security-questions-dropdown" class="dropdown">
+						<ul class="dropdown-head">
+							<li id="security-questions-title"><a href="#1">Questions</a></li>
+							<ul class="dropdown-items">
+						        <li id="QuestionsCorrect"><a href="#2">Answered correctly</a></li>
+						        <li id="NoQuestions"><a href="#3">None set up</a></li>
+					        </ul>
+					    </ul>
+					</div>
 				</div>
 				<div class = "rightmenu-title" id = "applications-title"><div>Applications</div></div>
 				<div id="password-dropdown" class="dropdown">
