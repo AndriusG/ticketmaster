@@ -112,8 +112,10 @@ textarea {
 	background-color: #26393D;
 }
 
-#applications-title {
-	height: 40px;
+.rightmenu-title {
+	height: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	margin-bottom: 10px;
 	position: relative;
 	display: block;
@@ -121,8 +123,8 @@ textarea {
 	text-align: center;
 }
 
-#applications-title div {
-	padding-top: 6px;
+#applications-title {
+	margin-top: 10px;
 }
 
 /**********************************

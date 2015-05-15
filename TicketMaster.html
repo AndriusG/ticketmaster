@@ -23,13 +23,23 @@
 		<div id = "contents">
 			<textarea id="text-area" spellcheck = "false" rows="32"></textarea>
 			<div id ="button-area">
-				<div id = "applications-title"><div>Applications</div></div>
+				<div class = "rightmenu-title"><div>Quick Buttons</div></div>
+				<div id="text-dropdown" class="dropdown">
+					<ul class="dropdown-head">
+						<li id="text-actions-title"><a href="#1">Text actions</a></li>
+						<ul class="dropdown-items">
+					        <li id=""><a href="#2">Clear</a></li>
+					        <li id=""><a href="#3">Select All</a></li>
+				        </ul>
+				    </ul>
+				</div>
+				<div class = "rightmenu-title" id = "applications-title"><div>Applications</div></div>
 				<div id="password-dropdown" class="dropdown">
 					<ul class="dropdown-head">
 						<li><a href="#1">Passwords</a></li>
 						<ul class="dropdown-items">
 					        <li id="ResetWorkstationBtn"><a href="#2">Workstation</a></li>
-					        <li><a href="#3">BitLocker</a></li>
+					        <li id="ResetBitLockerBtn"><a href="#3">BitLocker</a></li>
 					        <li><a href="#4">AS400</a></li>
 					        <li><a href="#6">Imaging</a></li>
 					        <li><a href="#7">GoodApp</a></li>
