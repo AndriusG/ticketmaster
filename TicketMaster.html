@@ -16,12 +16,12 @@
 			</div>
 			<div id = "break-timer">
 				<div id = "time">
-					<span>Time until next break: </span>
+					<span id="BreakTimer">Time until next break: </span>
 				</div>
 			</div>
 		</div>
 		<div id = "contents">
-			<textarea id="text-area" spellcheck = "false" rows="32"></textarea>
+			<textarea id="text-area" spellcheck = "false" rows="36"></textarea>
 			<div id ="button-area">
 				<div class = "rightmenu-title"><div>Quick Buttons</div></div>
 				<div class = "dropdown-wrapper">
@@ -64,6 +64,7 @@
 					        <li id="ResetImagingBtn"><a href="#6">Imaging</a></li>
 					        <li id="ResetGoodAppBtn"><a href="#7">GoodApp</a></li>
 					        <li id="ResetCertificateBtn"><a href="#7">Certificate</a></li>
+					        <li id="EscalationBtn"><a href="#8">Escalation</a></li>
 				        </ul>
 				    </ul>
 				</div>
@@ -71,9 +72,8 @@
 					<ul class="dropdown-head">
 						<li><a href="#1">RSA</a></li>
 						<ul class="dropdown-items">
-					        <li><a href="#2">Emergency</a></li>
-					        <li><a href="#3">Reseed</a></li>
-					        <li><a href="#4">Technician</a></li>
+					        <li><a href="#2" id="RSAReseed">Reseed</a></li>
+					        <li><a href="#3">Technician</a></li>
 				        </ul>
 				    </ul>
 				</div>
@@ -81,7 +81,7 @@
 					<ul class="dropdown-head">
 						<li><a href="#1">AppStore</a></li>
 						<ul class="dropdown-items">
-					        <li><a href="#2">Installation failure</a></li>
+					        <li><a href="#2" id="InstallationFailBtn">Installation failure</a></li>
 					        <li><a href="#3">Installation assistance</a></li>
 				        </ul>
 				    </ul>
