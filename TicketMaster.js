@@ -1,3 +1,8 @@
+$(document).ready(function()
+{
+   setInterval('updateClock()', 1000);
+});
+
 /**********************************
 Dropdown stlye
 **********************************/
@@ -21,7 +26,7 @@ Functions
 
 var emptyCapture = ("Additional User Information \n•\tAre they remote/alternate location (Y/N) N \no\tPhone Number: \no\tPhysical Location: \n \nMachine/Equipment related: \n•\tWindows XP, Windows 7, other: Windows 7\n•\tDesktop or Laptop: \n \nLegacy Org: \nL-Aon / L-Hewitt \n  \nISSUE DESCRIPTION:  \n•\tApplication/System: \n•\tUser ID used to access system: \n•\tWhen did this issue start? Today \n•\tWhen (or has) this action been successful in the past? Yes \n•\tHave there been any recent changes to the PC and/or Software? No\n•\tHow many users are affected? 1 \n•\tIs there any Client impact ? No \no\tIf yes, list Client(s) impacted: \no\tIs the caller part of a call center? \n \nFull Error message/Situation details: \n  \nISSUE TROUBLESHOOTING: \n•\tThe following actions were performed with the end-user: \n•\t");
 
-var workstationCapture = ("Additional User Information \n•\tAre they remote/alternate location (Y/N) N \no	Phone Number: \no	Physical Location: \n \nMachine/Equipment related: \n•	Windows XP, Windows 7, other: Windows 7\n•\tDesktop or Laptop: \n \nLegacy Org: \nL-Aon / L-Hewitt \n  \nISSUE DESCRIPTION:  \n•\tApplication/System: Workstation \n•	User ID used to access system: \n•\tWhen did this issue start? Today \n•\tWhen (or has) this action been successful in the past? Yes \n•\tHave there been any recent changes to the PC and/or Software? No\n•\tHow many users are affected? 1 \n•\tIs there any Client impact ? No \n \nFull Error message/Situation details: User is locked out of the system \n  \nISSUE TROUBLESHOOTING: \n•\tThe following actions were performed with the end-user: \n•\tFound user in oneIdentity\n•\tChallenge questions answered correctly \n•\tReset password in oneIdentity\n•\tUser is able to log in but gets Windows Security pop-ups in Outlook\n•\tDeleted credentials in credential manager\n•\tCleared cache/temp files in Internet Options\n•\tUser restarted Outlook and logged in automatically\n•\tFirst contact resolution\n\nhttps://one.aon.net/sites/GlobalServiceDesk_KnowledgeBase/_layouts/WopiFrame.aspx?sourcedoc=/sites/GlobalServiceDesk_KnowledgeBase/Documents/Global%20-%20oneIdentity%20Global%20PW%20Manager%20-%20PW%20-%20Aon%20Password%20Type%20Resets%20(Aon%20Hewitt).docx&action=default&DefaultItemOpen=1");
+var workstationCapture = ("Additional User Information \n•\tAre they remote/alternate location (Y/N) N \no	Phone Number: \no	Physical Location: \n \nMachine/Equipment related: \n•	Windows XP, Windows 7, other: Windows 7\n•\tDesktop or Laptop: \n \nLegacy Org: \nL-Aon / L-Hewitt \n  \nISSUE DESCRIPTION:  \n•\tApplication/System: Workstation \n•	User ID used to access system: \n•\tWhen did this issue start? Today \n•\tWhen (or has) this action been successful in the past? Yes \n•\tHave there been any recent changes to the PC and/or Software? No\n•\tHow many users are affected? 1 \n•\tIs there any Client impact ? No \n \nFull Error message/Situation details: User is locked out of the system \n  \nISSUE TROUBLESHOOTING: \n•\tThe following actions were performed with the end-user: \n•\tFound user in oneIdentity\n•\tChallenge questions answered correctly \n•\tReset password in oneIdentity\n•\tUser is able to log in but gets Windows Security pop-ups in Outlook\n•\tDeleted credentials in credential manager\n•\tCleared cache/temp files in Internet Options\n•\tDeleted Lync client authentication certificates in certmgr.msc\n•\tUser restarted Outlook and logged in automatically\n•\tFirst contact resolution\n\nhttps://one.aon.net/sites/GlobalServiceDesk_KnowledgeBase/_layouts/WopiFrame.aspx?sourcedoc=/sites/GlobalServiceDesk_KnowledgeBase/Documents/Global%20-%20oneIdentity%20Global%20PW%20Manager%20-%20PW%20-%20Aon%20Password%20Type%20Resets%20(Aon%20Hewitt).docx&action=default&DefaultItemOpen=1");
 
 var bitlockerCapture = ("Additional User Information \n•\tAre they remote/alternate location (Y/N)  \no\tPhone Number:  \no\tPhysical Location: \n  \nMachine/Equipment related: \n•\tWindows XP, Windows 7, other: Windows 7\n•\tDesktop or Laptop: Laptop\n  \nLegacy Org\nL-Aon / L-Hewitt\n  \nISSUE DESCRIPTION:\n•\tApplication/System: BitLocker\n•\tUser ID used to access system as applicable: \n•\tWhen did this issue start? Today\n•\tWhen (or has) this action been successful in the past? Yes\n•\tHave there been any recent changes to the PC and/or Software? No\n•\tHow many users are affected? 1\n•\tIs there any Client impact ? No\n  \nFull Error message/Situation details: User needs a BitLocker recovery key \n  \nISSUE TROUBLESHOOTING:  \n•\tThe following actions were performed with the end user:\n•\tAsked user security questions - answered correctly\n•\tProvided user with recovery key\n•\tUser is able to log in\n•\tAdvised user to reset PIN\n•\tFirst contact resolution\n\nhttps://one.aon.net/sites/GlobalServiceDesk_KnowledgeBase/_layouts/WopiFrame2.aspx?sourcedoc=/sites/GlobalServiceDesk_KnowledgeBase/Documents/Bitlocker%20-%20Recovery%20Key%20Creation.doc&action=default&DefaultItemOpen=1");
 
@@ -165,32 +170,42 @@ function updateClock ( )
     var currentTime = new Date ( );
     var currentHours = currentTime.getHours ( );
     var currentMinutes = currentTime.getMinutes ( );
-    var currentSeconds = currentTime.getSeconds ( );
- 
+    // Timezones functionality
+
+    var currentHoursEST = currentHours - 7;
+    var currentHoursCST = currentHours - 8;
+    var currentHoursPST = currentHours - 10;
+    var currentHoursIST = currentHours + 2;
+    var currentMinutesIST = currentMinutes;
+
     // Pad the minutes and seconds with leading zeros, if required
     currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-    currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
- 
-    // Choose either "AM" or "PM" as appropriate
-    var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
- 
-    // Convert the hours component to 12-hour format if needed
-    currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
- 
+    currentHours = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+
     // Convert an hours component of "0" to "12"
-    currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+    // currentHours = ( currentHours == 0 ) ? 12 : currentHours;
  
+    // IST Rounding up minutes/hours
+    if (currentMinutes < 30) {
+        currentMinutesIST += 30}
+        else {
+            currentMinutesIST += 30 - 60;
+            currentMinutesIST = ( currentMinutesIST < 10 ? "0" : "" ) + currentMinutesIST;
+            currentHoursIST += 1;
+    };
+
+    if (currentHoursIST >= 24) {
+        currentHoursIST -= 24;
+        currentHoursIST = "0" + currentHoursIST;
+    };
+
     // Compose the string for display
-    var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+    var currentTimeStringEST = currentHoursEST + ":" + currentMinutes;
+    var currentTimeStringCST = currentHoursCST + ":" + currentMinutes;
+    var currentTimeStringPST = currentHoursPST + ":" + currentMinutes;
+    var currentTimeStringIST = currentHoursIST + ":" + currentMinutesIST;
+    
      
-     
-    $("#BreakTimer").html(currentTimeString);
+    $("#ESTTime").html(currentTimeStringIST);
          
  }
- 
-$(document).ready(function()
-{
-   setInterval('updateClock()', 1000);
-});
-
-$("#BreakTimer").html(currentTimeString)

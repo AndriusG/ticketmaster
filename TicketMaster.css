@@ -46,6 +46,8 @@ HEADER
 	border: 2px solid #D0A825;
 	margin: 35px 0px 30px 5%;
 	background-color: #FFFAE4;
+	font-family: 'Open Sans';
+	font-weight: bold;
 }
 
 #time {
