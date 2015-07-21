@@ -206,6 +206,9 @@ function updateClock ( )
     var currentTimeStringIST = currentHoursIST + ":" + currentMinutesIST;
     
      
-    $("#ESTTime").html(currentTimeStringIST);
+    $("#ESTTime").html(currentTimeStringEST);
+    $("#CSTTime").html(currentTimeStringCST);
+    $("#PSTTime").html(currentTimeStringPST);
+    $("#ISTTime").html(currentTimeStringIST);
          
  }
