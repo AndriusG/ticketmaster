@@ -19,10 +19,10 @@
 					<img src="clock-icon.png" alt="Clock Icon" id="clock-icon">
 				</div>
 				<div id="time">
-					<span>PST: </span><span id="PSTTime"></span>
-					<span>CST: </span><span id="CSTTime"></span>
-					<span>EST: </span><span id="ESTTime"></span>
-					<span>IST: </span><span id="ISTTime"></span>
+					<span class ="clock-text"><span id="PSTTime"></span><span class = "timezone-text">PST </span></span>
+					<span class ="clock-text"><span id="CSTTime"></span><span class = "timezone-text">CST </span></span>
+					<span class ="clock-text"><span id="ESTTime"></span><span class = "timezone-text">EST </span></span>
+					<span class ="clock-text"><span id="ISTTime"></span><span class = "timezone-text">IST </span></span>
 				</div>		
 			</div>
 		</div>
@@ -35,8 +35,9 @@
 						<ul class="dropdown-head">
 							<li id="text-actions-title"><a href="#1">Text actions</a></li>
 							<ul class="dropdown-items">
-						        <li id="SelectAllBtn"><a href="#2">Select All</a></li>
-						        <li id="ClearBtn"><a href="#3">Clear</a></li>
+								<li id="ClearBtn"><a href="#2">Clear</a></li>
+						        <li id="EscalationBtn"><a href="#3">Escalation</a></li>
+						        <li id="MIBtn"><a href="#4">MI Template</a></li>
 					        </ul>
 					    </ul>
 					</div>
@@ -70,7 +71,6 @@
 					        <li id="ResetImagingBtn"><a href="#6">Imaging</a></li>
 					        <li id="ResetGoodAppBtn"><a href="#7">GoodApp</a></li>
 					        <li id="ResetCertificateBtn"><a href="#7">Certificate</a></li>
-					        <li id="EscalationBtn"><a href="#8">Escalation</a></li>
 				        </ul>
 				    </ul>
 				</div>
@@ -79,7 +79,7 @@
 						<li><a href="#1">RSA</a></li>
 						<ul class="dropdown-items">
 					        <li><a href="#2" id="RSAReseed">Reseed</a></li>
-					        <li><a href="#3">Technician</a></li>
+					        <li><a href="#3" id="RSATechnician">Technician</a></li>
 				        </ul>
 				    </ul>
 				</div>
@@ -88,13 +88,30 @@
 						<li><a href="#1">AppStore</a></li>
 						<ul class="dropdown-items">
 					        <li><a href="#2" id="InstallationFailBtn">Installation failure</a></li>
-					        <li><a href="#3">Installation assistance</a></li>
+					        <li><a href="#3" id="InstallationAssistanceBtn">Installation assistance</a></li>
 				        </ul>
 				    </ul>
 				</div>
 			</div>
 		</div>
 		<div id = "footer">
+			<div id = "table-wrapper">
+				<table>
+				  <tr>
+				  	<th colspan = "3">Contact numbers</th>
+				  </tr>
+				  <tr>
+				    <td>Jill</td>
+				    <td>Smith</td> 
+				    <td>50</td>
+				</tr>
+				  <tr>
+				    <td>Eve</td>
+				    <td>Jackson</td> 
+				    <td>94</td>
+				  </tr>
+				</table>
+			</div>
 		</div>
 		<script type="text/javascript" src="TicketMaster.js"></script>
 	</body>

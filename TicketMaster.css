@@ -41,7 +41,7 @@ HEADER
 #break-timer {
 	float: left;
 	height: 45px;
-	width: 550px;
+	width: 575px;
 	padding: 0;
 	border: 2px solid #D0A825;
 	margin: 35px 0px 30px 5%;
@@ -64,6 +64,22 @@ HEADER
 
 #time {
 	display: inline-block;
+	vertical-align: top;
+	padding: 13px;
+}
+
+.clock-text {
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 15px;
+	font-size: 1.2em;
+}
+
+.timezone-text {
+	font-size: 0.7em;
+	padding-left: 5px;
+	display: inline-block;
+	color: #26393D;
 }
 
 /**********************************
@@ -158,6 +174,7 @@ List styles
 .dropdown-wrapper {
 	width: 100%;
 	height: 40px;
+	padding-bottom: 50px;
 }
 
 ul
@@ -213,3 +230,26 @@ List styles
  	margin-right: 5%;
  	margin-left: 5%;
  }
+
+/**********************************
+Footer
+**********************************/
+
+/**********************************
+Table 1
+**********************************/
+
+#table-wrapper {
+	font-family: 'Open Sans';
+	font-size: 0.8em;
+}
+
+#table-wrapper table {
+	margin: 20px;
+	border: 1px solid #FFFAE4;
+
+}
+
+#table-wrapper table tr td {
+	padding: 5px;
+}

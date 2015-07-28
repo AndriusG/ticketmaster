@@ -50,7 +50,13 @@ var escalationQuicktext = ("Escalation Items:\n•\tPreferred contact method: (L
 
 var rsaReseedQuicktext = ("Additional User Information \n•\tAre they remote/alternate location (Y/N) Y\n \nMachine/Equipment related: \n•\tWindows XP, Windows 7, other: Windows 7\n•\tDesktop or Laptop: Laptop \n \nLegacy Org: \nL-Hewitt \n  \nISSUE DESCRIPTION:   \n•\tApplication/System: RSA SecurID Token \n•\tUser ID used to access system: \n•\tWhen did this issue start? Today \n•\tWhen (or has) this action been successful in the past? Yes \n•\tHave there been any recent changes to the PC and/or Software? No\n•\tHow many users are affected? 1 \n•\tIs there any Client impact ? No \n \nFull Error message/Situation details: User needs to import their RSA SecurID token \n  \nISSUE TROUBLESHOOTING: \n•\tThe following actions were performed with the end-user: \n•\tFound user in oneIdentity\n•\tChallenge questions answered correctly \n•\tGenerated token activation code and provided it to the user along with the URL\n•\tUser imported token successfully\n•\tFirst contact resolution\n\nhttps://one.aon.net/sites/GlobalServiceDesk_KnowledgeBase/_layouts/WopiFrame.aspx?sourcedoc=/sites/GlobalServiceDesk_KnowledgeBase/Documents/AON%20Hewitt%20-%20RSA%20%20-How%20to%20Re-Seed%20Import%20a%20token.docx&action=default&DefaultItemOpen=1")
 
-var installationFailQuicktext = ("Additional User Information \n•\tAre they remote/alternate location (Y/N) Y\n \nMachine/Equipment related: \n•\tWindows XP, Windows 7, other: Windows 7\n•\tDesktop or Laptop: Laptop \n \nLegacy Org: \nL-Hewitt \n  \nISSUE DESCRIPTION:   \n•\tApplication/System: RSA SecurID Token \n•\tUser ID used to access system: \n•\tWhen did this issue start? Today \n•\tWhen (or has) this action been successful in the past? Yes \n•\tHave there been any recent changes to the PC and/or Software? No\n•\tHow many users are affected? 1 \n•\tIs there any Client impact ? No \n \nFull Error message/Situation details: User needs to import their RSA SecurID token \n  \nISSUE TROUBLESHOOTING: \n•\tThe following actions were performed with the end-user: \n•\tFound user in oneIdentity\n•\tChallenge questions answered correctly \n•\tGenerated token activation code and provided it to the user along with the URL\n•\tUser imported token successfully\n•\tFirst contact resolution\n\nhttps://one.aon.net/sites/GlobalServiceDesk_KnowledgeBase/_layouts/WopiFrame.aspx?sourcedoc=/sites/GlobalServiceDesk_KnowledgeBase/Documents/AON%20Hewitt%20-%20RSA%20%20-How%20to%20Re-Seed%20Import%20a%20token.docx&action=default&DefaultItemOpen=1")
+var rsaTechnicianQuicktext = ("Additional User Information \n•\tAre they remote/alternate location (Y/N) N\n \nMachine/Equipment related: \n•\tWindows XP, Windows 7, other: Windows 7\n•\tDesktop or Laptop: Laptop \n \nLegacy Org: \nL-Hewitt \n  \nISSUE DESCRIPTION:   \n•\tApplication/System: RSA SecurID Token \n•\tUser ID used to access system: \n•\tWhen did this issue start? Today \n•\tWhen (or has) this action been successful in the past? Yes \n•\tHave there been any recent changes to the PC and/or Software? No\n•\tHow many users are affected? 1 \n•\tIs there any Client impact ? No \n \nFull Error message/Situation details: A local technician needs an activation code to import a user's token \n  \nISSUE TROUBLESHOOTING: \n•\tThe following actions were performed with the end-user: \n•\tFound user in oneIdentity\n•\tChallenge questions answered correctly \n•\tGenerated token activation code and provided it to the technicianL\n•\tUser imported token successfully\n•\tFirst contact resolution\n\nhttps://one.aon.net/sites/GSD_KnowledgeBase/_layouts/WopiFrame2.aspx?sourcedoc=/sites/GSD_KnowledgeBase/Knowledge%20Library/Aon%20Hewitt%20GSC%20(KNOX)/Definite-Retention/Global%20-%20Aon%20Hewitt%20-%20SecurID%20Software%20Token%20-%20Support%20Technician%20requests%20RSA%20Reseed.docx&action=default&DefaultItemOpen=1")
+
+var installationFailQuicktext = ("Additional User Information \n•\tAre they remote/alternate location (Y/N) \n \nMachine/Equipment related: \n•\tWindows XP, Windows 7, other: Windows 7\n•\tDesktop or Laptop: Desktop / Laptop \n \nLegacy Org: \nL-Aon / L-Hewitt \n  \nISSUE DESCRIPTION:   \n•\tApplication/System: AppStore \n•\tUser ID used to access system: \n•\tWhen did this issue start? Today \n•\tWhen (or has) this action been successful in the past? Yes \n•\tHave there been any recent changes to the PC and/or Software? No\n•\tHow many users are affected? 1 \n•\tIs there any Client impact ? No \n \nFull Error message/Situation details: User received an email saying that installation of APPLICATION NAME from the AppSTore has failed \n  \nISSUE TROUBLESHOOTING: \n•\tThe following actions were performed with the end-user: \n•\tRouting to\n\n Escalation Items:\n•\tPreferred contact method: (LYNC/EMAIL/PHONE)\n•\tAvailability restriction times/dates: \n•\tRoom, desk or seat number:  \n\nhttps://one.aon.net/sites/GlobalServiceDesk_KnowledgeBase/_layouts/WopiFrame.aspx?sourcedoc=/sites/GlobalServiceDesk_KnowledgeBase/Documents/Global%20-%20AppStore%20-%20Installation%20Failure.doc&action=default&DefaultItemOpen=1")
+
+var installationAssistanceQuicktext = ("Additional User Information \n•\tAre they remote/alternate location (Y/N) \n \nMachine/Equipment related: \n•\tWindows XP, Windows 7, other: Windows 7\n•\tDesktop or Laptop: Desktop / Laptop \n \nLegacy Org: \nL-Aon / L-Hewitt \n  \nISSUE DESCRIPTION:   \n•\tApplication/System: AppStore \n•\tUser ID used to access system: \n•\tWhen did this issue start? Today \n•\tWhen (or has) this action been successful in the past? Yes \n•\tHave there been any recent changes to the PC and/or Software? No\n•\tHow many users are affected? 1 \n•\tIs there any Client impact ? No \n \nFull Error message/Situation details: User would like assistance  \n  \nISSUE TROUBLESHOOTING: \n•\tThe following actions were performed with the end-user: \n•\tRouting to\n\n Escalation Items:\n•\tPreferred contact method: (LYNC/EMAIL/PHONE)\n•\tAvailability restriction times/dates: \n•\tRoom, desk or seat number:  \n\nhttps://one.aon.net/sites/GlobalServiceDesk_KnowledgeBase/_layouts/WopiFrame.aspx?sourcedoc=/sites/GlobalServiceDesk_KnowledgeBase/Documents/Global%20-%20AppStore%20-%20How%20to%20install%20and%20uninstall%20software.doc&action=default&DefaultItemOpen=1")
+
+var miCapture = ("•\tUser's Resolver Team Name (if applicable, please confirm with the user if they are from a resolver team):\n•\tThe user’s name and contact number\n•\tA different user’s name and contact number\n•\tWhat is the main issue? (error message, complete details of the incident)\n•\tWhen did this issue begin?\n•\tWhat is being impacted? (Server, application, network)\n•\tWhat is the Server name/IP, application name, network circuit id/IP?\n•\tWhat is the location of the outage?\n•\tHow many users are impacted?\n•\tIs there a temporary workaround?\n•\tWhat is the criticality of this outage? (Financial loss, production stopped, shipping stopped etc)")
 
 /**********************************
 2. Button functions
@@ -62,6 +68,13 @@ $('#SelectAllBtn').on('click', function() {
 
 $('#ClearBtn').on('click', function() {
     $('#text-area').val('');
+});
+
+$('#MIBtn').on('click', function() {
+    var caretPos = document.getElementById("text-area").selectionStart;
+    var textAreaTxt = $('#text-area').val();
+    var txtToAdd = miCapture;
+    $('#text-area').val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
 });
 
 $('#ResetWorkstationBtn').on('click', function() {
@@ -148,10 +161,24 @@ $('#RSAReseed').on('click', function() {
     $('#text-area').val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
 });
 
+$('#RSATechnician').on('click', function() {
+    var caretPos = document.getElementById("text-area").selectionStart;
+    var textAreaTxt = $('#text-area').val();
+    var txtToAdd = rsaTechnicianQuicktext;
+    $('#text-area').val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+});
+
 $('#InstallationFailBtn').on('click', function() {
     var caretPos = document.getElementById("text-area").selectionStart;
     var textAreaTxt = $('#text-area').val();
     var txtToAdd = installationFailQuicktext;
+    $('#text-area').val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+});
+
+$('#InstallationAssistanceBtn').on('click', function() {
+    var caretPos = document.getElementById("text-area").selectionStart;
+    var textAreaTxt = $('#text-area').val();
+    var txtToAdd = installationAssistanceQuicktext;
     $('#text-area').val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
 });
 
@@ -164,6 +191,13 @@ $("#text-area").val(emptyCapture);
 /**********************************
 Timer
 **********************************/
+
+function blinker() {
+    $('.blink_me').fadeOut(500);
+    $('.blink_me').fadeIn(500);
+}
+
+setInterval(blinker, 1000);
 
 function updateClock ( )
     {
@@ -198,6 +232,20 @@ function updateClock ( )
         currentHoursIST -= 24;
         currentHoursIST = "0" + currentHoursIST;
     };
+
+    if (currentHoursEST < 10) {
+        currentHoursEST = "0" + currentHoursEST;
+    }
+
+    if (currentHoursCST < 10) {
+        currentHoursCST = "0" + currentHoursCST;
+    }
+
+    if (currentHoursPST < 10) {
+        currentHoursPST = "0" + currentHoursPST;
+    }
+
+
 
     // Compose the string for display
     var currentTimeStringEST = currentHoursEST + ":" + currentMinutes;
