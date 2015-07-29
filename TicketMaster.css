@@ -1,3 +1,5 @@
+
+
 body {
 	background-color: #40627C;
 	font-family: 'Bree Serif'
@@ -222,6 +224,7 @@ ul li a {
 /**********************************
 List styles
 **********************************/
+
  #footer {
  	width: 90%;
  	height: 700px;
@@ -229,6 +232,7 @@ List styles
  	margin-top: 100px;
  	margin-right: 5%;
  	margin-left: 5%;
+ 	padding: 40px;
  }
 
 /**********************************
@@ -244,12 +248,22 @@ Table 1
 	font-size: 0.8em;
 }
 
-#table-wrapper table {
-	margin: 20px;
-	border: 1px solid #FFFAE4;
-
+#table-wrapper table tr th, 
+#table-wrapper table tr td {
+	padding: 10px;
 }
 
-#table-wrapper table tr td {
-	padding: 5px;
+#table-wrapper thead {
+	background-color: #26393D;
+	color: #FFFAE4;
+}
+
+#table-wrapper tbody tr td:nth-child(odd) {
+	background-color: #E8E595;
+	color: #26393D;
+}
+
+#table-wrapper tbody tr td:nth-child(even) {
+	background-color: #40627C;
+	color: #E8E595;
 }
