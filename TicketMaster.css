@@ -226,13 +226,15 @@ List styles
 **********************************/
 
  #footer {
- 	width: 90%;
- 	height: 700px;
+ 	box-sizing: border-box;
+ 	width: 100%;
+ 	height: 1100px;
  	background-color: #D0A825;
  	margin-top: 100px;
- 	margin-right: 5%;
- 	margin-left: 5%;
- 	padding: 40px;
+ 	padding: 60px;
+ 	-webkit-box-shadow: -2px -2px 4px 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px -2px 4px 0 rgba(0,0,0,0.75);
+	box-shadow: -2px -2px 4px 0 rgba(0,0,0,0.75);
  }
 
 /**********************************
@@ -244,13 +246,33 @@ Table 1
 **********************************/
 
 #table-wrapper {
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#table-wrapper table {
 	font-family: 'Open Sans';
 	font-size: 0.8em;
+	margin-left:auto; 
+    margin-right:auto;
+	-webkit-box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.75);
+}
+
+#contact-table {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+#email-table {
+	display: inline-block;
 }
 
 #table-wrapper table tr th, 
 #table-wrapper table tr td {
-	padding: 10px;
+	padding: 8px 10px;
 }
 
 #table-wrapper thead {
@@ -266,4 +288,8 @@ Table 1
 #table-wrapper tbody tr td:nth-child(even) {
 	background-color: #40627C;
 	color: #E8E595;
+}
+
+.center-align {
+	text-align: center;
 }
