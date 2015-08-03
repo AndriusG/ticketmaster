@@ -44,9 +44,11 @@ var bomgarQuicktext = ('•\tConnected to the user for a screenshare using Bomga
 
 var correctQuestionsQuicktext = ('•\tFound user in oneID and asked security questions - answered correctly');
 
-var incorrectQuestionsQuicktext = ('•\tUser has no security questions set up, so emailed password to manager');
+var incorrectQuestionsQuicktext = ("•\tUser has no security questions set up, so emailed password to user's manager");
 
 var escalationQuicktext = ("Escalation Items:\n•\tPreferred contact method: (LYNC/EMAIL/PHONE)\n•\tAvailability restriction times/dates: \n•\tRoom, desk or seat number: ");
+
+var cacheQuicktext = ("•\tCleared cache/temporary internet files in Internet Options");
 
 var rsaReseedQuicktext = ("Additional User Information \n•\tAre they remote/alternate location (Y/N) Y\n \nMachine/Equipment related: \n•\tWindows XP, Windows 7, other: Windows 7\n•\tDesktop or Laptop: Laptop \n \nLegacy Org: \nL-Hewitt \n  \nISSUE DESCRIPTION:   \n•\tApplication/System: RSA SecurID Token \n•\tUser ID used to access system: \n•\tWhen did this issue start? Today \n•\tWhen (or has) this action been successful in the past? Yes \n•\tHave there been any recent changes to the PC and/or Software? No\n•\tHow many users are affected? 1 \n•\tIs there any Client impact ? No \n \nFull Error message/Situation details: User needs to import their RSA SecurID token \n  \nISSUE TROUBLESHOOTING: \n•\tThe following actions were performed with the end-user: \n•\tFound user in oneIdentity\n•\tChallenge questions answered correctly \n•\tGenerated token activation code and provided it to the user along with the URL\n•\tUser imported token successfully\n•\tFirst contact resolution\n\nhttps://one.aon.net/sites/GlobalServiceDesk_KnowledgeBase/_layouts/WopiFrame.aspx?sourcedoc=/sites/GlobalServiceDesk_KnowledgeBase/Documents/AON%20Hewitt%20-%20RSA%20%20-How%20to%20Re-Seed%20Import%20a%20token.docx&action=default&DefaultItemOpen=1")
 
@@ -74,6 +76,13 @@ $('#MIBtn').on('click', function() {
     var caretPos = document.getElementById("text-area").selectionStart;
     var textAreaTxt = $('#text-area').val();
     var txtToAdd = miCapture;
+    $('#text-area').val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+});
+
+$('#CacheBtn').on('click', function() {
+    var caretPos = document.getElementById("text-area").selectionStart;
+    var textAreaTxt = $('#text-area').val();
+    var txtToAdd = cacheQuicktext;
     $('#text-area').val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
 });
 

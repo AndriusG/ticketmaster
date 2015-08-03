@@ -1,5 +1,3 @@
-
-
 body {
 	background-color: #40627C;
 	font-family: 'Bree Serif'
@@ -152,10 +150,15 @@ textarea {
 	z-index: 0;
 }
 
-#applications-title {
+#applications-title,
+#usefulinfo-title {
 	margin-top: 10px;
 	position: relative;
 	z-index: 0;
+}
+
+#usefulinfo-title {
+
 }
 
 /**********************************
@@ -176,7 +179,7 @@ List styles
 .dropdown-wrapper {
 	width: 100%;
 	height: 40px;
-	padding-bottom: 50px;
+	padding-bottom: 90px;
 }
 
 ul

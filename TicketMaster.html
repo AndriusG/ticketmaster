@@ -10,6 +10,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	</head>
 	<body>
+		<div id="blanket" style="display:none"></div>
+		<div id="popUpDiv" style="display:none">
+
+		</div>
 		<div id = "header">
 			<div id = "title">
 				<h2>Aon Ticket Master</h2>
@@ -29,15 +33,16 @@
 		<div id = "contents">
 			<textarea id="text-area" spellcheck = "false" rows="36"></textarea>
 			<div id ="button-area">
-				<div class = "rightmenu-title"><div>Quick Buttons</div></div>
+				<div class = "rightmenu-title"><div>Quick Text</div></div>
 				<div class = "dropdown-wrapper">
 					<div id="text-dropdown" class="dropdown">
 						<ul class="dropdown-head">
-							<li id="text-actions-title"><a href="#1">Text actions</a></li>
+							<li id="text-actions-title"><a href="#1">Escalation</a></li>
 							<ul class="dropdown-items">
 								<li id="ClearBtn"><a href="#2">Clear</a></li>
 						        <li id="EscalationBtn"><a href="#3">Escalation</a></li>
 						        <li id="MIBtn"><a href="#4">MI Template</a></li>
+						        <li id="CacheBtn"><a href="#4">Cache troubleshoot</a></li>
 					        </ul>
 					    </ul>
 					</div>
@@ -61,36 +66,56 @@
 					</div>
 				</div>
 				<div class = "rightmenu-title" id = "applications-title"><div>Applications</div></div>
-				<div id="password-dropdown" class="dropdown">
-					<ul class="dropdown-head">
-						<li><a href="#1">Passwords</a></li>
-						<ul class="dropdown-items">
-					        <li id="ResetWorkstationBtn"><a href="#2">Workstation</a></li>
-					        <li id="ResetBitLockerBtn"><a href="#3">BitLocker</a></li>
-					        <li id="ResetAS400Btn"><a href="#4">AS400</a></li>
-					        <li id="ResetImagingBtn"><a href="#6">Imaging</a></li>
-					        <li id="ResetGoodAppBtn"><a href="#7">GoodApp</a></li>
-					        <li id="ResetCertificateBtn"><a href="#7">Certificate</a></li>
-				        </ul>
-				    </ul>
+				<div class = "dropdown-wrapper">
+					<div id="password-dropdown" class="dropdown">
+						<ul class="dropdown-head">
+							<li><a href="#1">Passwords</a></li>
+							<ul class="dropdown-items">
+						        <li id="ResetWorkstationBtn"><a href="#2">Workstation</a></li>
+						        <li id="ResetBitLockerBtn"><a href="#3">BitLocker</a></li>
+						        <li id="ResetAS400Btn"><a href="#4">AS400</a></li>
+						        <li id="ResetImagingBtn"><a href="#6">Imaging</a></li>
+						        <li id="ResetGoodAppBtn"><a href="#7">GoodApp</a></li>
+						        <li id="ResetCertificateBtn"><a href="#7">Certificate</a></li>
+					        </ul>
+					    </ul>
+					</div>
+					<div id="RSA-dropdown" class="dropdown">
+						<ul class="dropdown-head">
+							<li><a href="#1">RSA</a></li>
+							<ul class="dropdown-items">
+						        <li><a href="#2" id="RSAReseed">Reseed</a></li>
+						        <li><a href="#3" id="RSATechnician">Technician</a></li>
+					        </ul>
+					    </ul>
+					</div>
+					<div id="AppStore-dropdown" class="dropdown">
+						<ul class="dropdown-head">
+							<li><a href="#1">AppStore</a></li>
+							<ul class="dropdown-items">
+						        <li><a href="#2" id="InstallationFailBtn">Installation failure</a></li>
+						        <li><a href="#3" id="InstallationAssistanceBtn">Installation assistance</a></li>
+					        </ul>
+					    </ul>
+					</div>
 				</div>
-				<div id="RSA-dropdown" class="dropdown">
-					<ul class="dropdown-head">
-						<li><a href="#1">RSA</a></li>
-						<ul class="dropdown-items">
-					        <li><a href="#2" id="RSAReseed">Reseed</a></li>
-					        <li><a href="#3" id="RSATechnician">Technician</a></li>
-				        </ul>
-				    </ul>
-				</div>
-				<div id="AppStore-dropdown" class="dropdown">
-					<ul class="dropdown-head">
-						<li><a href="#1">AppStore</a></li>
-						<ul class="dropdown-items">
-					        <li><a href="#2" id="InstallationFailBtn">Installation failure</a></li>
-					        <li><a href="#3" id="InstallationAssistanceBtn">Installation assistance</a></li>
-				        </ul>
-				    </ul>
+				<div class = "rightmenu-title" id = "usefulinfo-title"><div>Useful information</div></div>
+				<div class = "dropdown-wrapper">
+					<div id="password-dropdown" class="dropdown">
+						<ul class="dropdown-head">
+							<li id="LocationLookupBtn"><a href="#">Location Lookup</a></li>
+					    </ul>
+					</div>
+					<div id="RSA-dropdown" class="dropdown">
+						<ul class="dropdown-head">
+							<li><a href="#1">Phone Type by Office</a></li>
+						</ul>
+					</div>
+					<div id="AppStore-dropdown" class="dropdown">
+						<ul class="dropdown-head">
+							<li><a href="#1">List of Citrix Portals</a></li>
+					    </ul>
+					</div>
 				</div>
 			</div>
 		</div>
