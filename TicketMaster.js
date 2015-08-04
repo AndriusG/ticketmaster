@@ -215,11 +215,19 @@ function updateClock ( )
     var currentMinutes = currentTime.getMinutes ( );
     // Timezones functionality
 
-    var currentHoursEST = currentHours - 7;
-    var currentHoursCST = currentHours - 8;
-    var currentHoursPST = currentHours - 10;
-    var currentHoursIST = currentHours + 2;
-    var currentMinutesIST = currentMinutes;
+    if (currentHours >= 10) {
+        var currentHoursEST = currentHours - 7;
+        var currentHoursCST = currentHours - 8;
+        var currentHoursPST = currentHours - 10;
+        var currentHoursIST = currentHours + 2;
+        var currentMinutesIST = currentMinutes;
+    } else {
+        var currentHoursEST = currentHours + 17;
+        var currentHoursCST = currentHours + 16;
+        var currentHoursPST = currentHours + 14;
+        var currentHoursIST = currentHours + 2;
+        var currentMinutesIST = currentMinutes;
+    }
 
     // Pad the minutes and seconds with leading zeros, if required
     currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
