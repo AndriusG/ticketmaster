@@ -41,16 +41,45 @@ Search Overlay
     display: none;
     left: 0;
     right: 0;
-    width: 90%;
+    width: 85%;
+    height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
     margin-left: auto;
     margin-right: auto;
-    background: #D0A825;
+    background: #547E87;
     padding: 1%;
     position: absolute;
-    cursor: default;
     z-index: 10001;
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+#location-lookup-table,
+#citrix-lookup-table {
+	table-layout: fixed;
+}
+
+#location-lookup-table tbody tr:nth-child(odd),
+#citrix-lookup-table tbody tr:nth-child(odd) {
+	background-color: #e8e595;
+	color: #40627C;
+}
+
+#location-lookup-table tbody tr:nth-child(even),
+#citrix-lookup-table tbody tr:nth-child(even) {
+	background-color: #ffffd0;
+	color: #40627C;
+}
+
+#location-lookup-table thead tr:nth-child(odd),
+#citrix-lookup-table thead tr:nth-child(odd){
+	background-color: #26393D;
+}
+
+#location-lookup-table thead tr:nth-child(even),
+#citrix-lookup-table thead tr:nth-child(even) {
+	background-color: #3D5B61;
 }
 
 /**********************************
@@ -315,12 +344,12 @@ thead {
 	color: #FFFAE4;
 }
 
-tbody tr td:nth-child(odd) {
+#table-wrapper tbody tr td:nth-child(odd) {
 	background-color: #E8E595;
 	color: #26393D;
 }
 
-tbody tr td:nth-child(even) {
+#table-wrapper tbody tr td:nth-child(even) {
 	background-color: #40627C;
 	color: #E8E595;
 }
