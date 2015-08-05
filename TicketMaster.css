@@ -14,6 +14,46 @@ button:hover {
 }
 
 /**********************************
+Search Overlay
+**********************************/
+
+.overlay-bg,
+.overlay-content {
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.overlay-bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    /* cursor: pointer; */
+    z-index: 1000; /* high z-index */
+    background: #000; /* fallback */
+    background: rgba(0,0,0,0.75);
+}
+
+.overlay-content {
+    display: none;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #D0A825;
+    padding: 1%;
+    position: absolute;
+    cursor: default;
+    z-index: 10001;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+/**********************************
 HEADER
 **********************************/
 
@@ -225,7 +265,7 @@ ul li a {
 }
 
 /**********************************
-List styles
+Footer
 **********************************/
 
  #footer {
@@ -241,10 +281,6 @@ List styles
  }
 
 /**********************************
-Footer
-**********************************/
-
-/**********************************
 Table 1
 **********************************/
 
@@ -254,41 +290,37 @@ Table 1
 	margin-left: auto;
 }
 
-#table-wrapper table {
+table {
 	font-family: 'Open Sans';
 	font-size: 0.8em;
 	margin-left:auto; 
     margin-right:auto;
+    display: inline-block;
 	-webkit-box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.75);
 	-moz-box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.75);
 	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.75);
 }
 
 #contact-table {
-	display: inline-block;
 	margin-bottom: 10px;
 }
 
-#email-table {
-	display: inline-block;
-}
-
-#table-wrapper table tr th, 
-#table-wrapper table tr td {
+table tr th, 
+table tr td {
 	padding: 8px 10px;
 }
 
-#table-wrapper thead {
+thead {
 	background-color: #26393D;
 	color: #FFFAE4;
 }
 
-#table-wrapper tbody tr td:nth-child(odd) {
+tbody tr td:nth-child(odd) {
 	background-color: #E8E595;
 	color: #26393D;
 }
 
-#table-wrapper tbody tr td:nth-child(even) {
+tbody tr td:nth-child(even) {
 	background-color: #40627C;
 	color: #E8E595;
 }
