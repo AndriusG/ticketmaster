@@ -56,30 +56,52 @@ Search Overlay
 }
 
 #location-lookup-table,
-#citrix-lookup-table {
+#citrix-lookup-table,
+#phone-lookup-table {
 	table-layout: fixed;
 }
 
 #location-lookup-table tbody tr:nth-child(odd),
-#citrix-lookup-table tbody tr:nth-child(odd) {
+#citrix-lookup-table tbody tr:nth-child(odd),
+#phone-lookup-table tbody tr:nth-child(odd) {
 	background-color: #e8e595;
 	color: #40627C;
 }
 
 #location-lookup-table tbody tr:nth-child(even),
-#citrix-lookup-table tbody tr:nth-child(even) {
+#citrix-lookup-table tbody tr:nth-child(even),
+#phone-lookup-table tbody tr:nth-child(even) {
 	background-color: #ffffd0;
 	color: #40627C;
 }
 
 #location-lookup-table thead tr:nth-child(odd),
-#citrix-lookup-table thead tr:nth-child(odd){
+#citrix-lookup-table thead tr:nth-child(odd),
+#phone-lookup-table thead tr:nth-child(odd) {
 	background-color: #26393D;
+	font-size: 1.6em;
 }
 
 #location-lookup-table thead tr:nth-child(even),
-#citrix-lookup-table thead tr:nth-child(even) {
+#citrix-lookup-table thead tr:nth-child(even),
+#phone-lookup-table thead tr:nth-child(even) {
 	background-color: #3D5B61;
+	font-size: 1.2em;
+}
+
+#phone-lookup-table tbody tr td:nth-child(5),
+#phone-lookup-table tbody tr td:nth-child(6),
+#phone-lookup-table tbody tr td:nth-child(7) {
+	text-align: center;
+}
+
+.notice {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	color: #e8e595;
+	font-size: 1.4em;
+	padding-bottom: 10px; 
 }
 
 /**********************************
@@ -211,6 +233,7 @@ textarea {
 	height: 25px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	margin-top: 10px;
 	margin-bottom: 10px;
 	position: relative;
 	display: block;
