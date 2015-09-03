@@ -110,8 +110,9 @@ $('#ClearBtn').on('click', function() {
     $('#text-area').val('');
 });
 
-
-
+$('#SelectAllBtn').on('click', function() {
+    $('#text-area').select();
+});
 
 $('#MIBtn').on('click', function() {
     var caretPos = document.getElementById("text-area").selectionStart;

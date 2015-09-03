@@ -31,7 +31,6 @@ Search Overlay
     left: 0;
     height:100%;
     width: 100%;
-    /* cursor: pointer; */
     z-index: 1000; /* high z-index */
     background: #000; /* fallback */
     background: rgba(0,0,0,0.75);
@@ -55,43 +54,49 @@ Search Overlay
     box-shadow: 0 0 5px rgba(0,0,0,0.9);
 }
 
-#location-lookup-table,
-#citrix-lookup-table,
-#phone-lookup-table {
+.overlay-table {
+	font-family: 'Open Sans';
 	table-layout: fixed;
+	width: 100%;
+	font-size: 1em;
 }
 
-#location-lookup-table tbody tr:nth-child(odd),
-#citrix-lookup-table tbody tr:nth-child(odd),
-#phone-lookup-table tbody tr:nth-child(odd) {
+.overlay-table tbody {
+	font-size: 0.8em;
+}
+
+.overlay-table tbody td {
+	padding: 15px;
+}
+
+#canada-india-location-lookup-table tbody {
+	line-height: 200%;
+}
+
+.overlay-table tbody tr:nth-child(odd){
 	background-color: #e8e595;
 	color: #40627C;
 }
 
-#location-lookup-table tbody tr:nth-child(even),
-#citrix-lookup-table tbody tr:nth-child(even),
-#phone-lookup-table tbody tr:nth-child(even) {
+.overlay-table tbody tr:nth-child(even) {
 	background-color: #ffffd0;
 	color: #40627C;
 }
 
-#location-lookup-table thead tr:nth-child(odd),
-#citrix-lookup-table thead tr:nth-child(odd),
-#phone-lookup-table thead tr:nth-child(odd) {
+.overlay-table thead tr:nth-child(odd) {
 	background-color: #26393D;
-	font-size: 1.6em;
+	font-size: 1.3em;
 }
 
-#location-lookup-table thead tr:nth-child(even),
-#citrix-lookup-table thead tr:nth-child(even),
-#phone-lookup-table thead tr:nth-child(even) {
+.overlay-table thead tr:nth-child(even){
 	background-color: #3D5B61;
-	font-size: 1.2em;
+	font-size: 0.9em;
 }
 
 #phone-lookup-table tbody tr td:nth-child(5),
 #phone-lookup-table tbody tr td:nth-child(6),
-#phone-lookup-table tbody tr td:nth-child(7) {
+#phone-lookup-table tbody tr td:nth-child(7),
+.center-align {
 	text-align: center;
 }
 
@@ -99,9 +104,9 @@ Search Overlay
 	display: inline-block;
 	width: 100%;
 	text-align: center;
-	color: #e8e595;
-	font-size: 1.4em;
-	padding-bottom: 10px; 
+	color: #fff;
+	font-size: 0.8em;
+	margin: none;
 }
 
 /**********************************
@@ -112,9 +117,6 @@ HEADER
 	width: 100%;
 	height: 110px;
 	background-color: #26393D;
-	-webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
-	-moz-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
-	box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
 }
 
 #title {
@@ -323,13 +325,10 @@ Footer
  #footer {
  	box-sizing: border-box;
  	width: 100%;
- 	height: 1100px;
+ 	height: 1500px;
  	background-color: #D0A825;
  	margin-top: 100px;
  	padding: 60px;
- 	-webkit-box-shadow: -2px -2px 4px 0 rgba(0,0,0,0.75);
-	-moz-box-shadow: -2px -2px 4px 0 rgba(0,0,0,0.75);
-	box-shadow: -2px -2px 4px 0 rgba(0,0,0,0.75);
  }
 
 /**********************************
@@ -337,24 +336,18 @@ Table 1
 **********************************/
 
 #table-wrapper {
-	width: 85%;
+	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-table {
+#footer table {
 	font-family: 'Open Sans';
 	font-size: 0.8em;
 	margin-left:auto; 
     margin-right:auto;
+    margin-bottom: 10px;
     display: inline-block;
-	-webkit-box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.75);
-	-moz-box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.75);
-	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.75);
-}
-
-#contact-table {
-	margin-bottom: 10px;
 }
 
 table tr th, 
